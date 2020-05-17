@@ -29,22 +29,17 @@ body {
 
 .showcase {
     margin-top: 4rem;
-    margin-bottom: 2rem;
-    width: 50%;
+    width: 30%;
 }
 
-.showcase h1.normal-title {
-    font-weight: 400;
+.normal-title {
+    font-weight: 200;
     font-size: 2rem;
 }
 
-.showcase h1.bold-title {
+.bold-title {
     font-weight: 600;
     font-size: 2rem;
-}
-
-p {
-    font-weight: 200;
 }
 
 .card {
@@ -52,7 +47,7 @@ p {
     padding: 25px;
     margin: 25px;
     height: 225px;
-    width: 400px;
+    width: 350px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     position: absolute;
@@ -96,4 +91,20 @@ footer {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1100px) {
+    .showcase {
+        width: 80%;
+    }
+
+    .normal-title,
+    .bold-title {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        position: relative;
+        transform: translate(0);
+    }
 }
